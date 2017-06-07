@@ -1,0 +1,34 @@
+<div ng-include ="'../angularjs/templates/header.html'">
+ 	
+ </div>
+<section>
+<div class="main-logo"><a ui-sref="home"><img class="ebay-logo" src="./images/ebay-logo.png" ></a></div>
+	<div class="ebay-form-main">
+	 <div class="ebay-form">
+	 
+	
+		<div class=" col-lg-6 col-md-6">
+			<div class="item"  >
+				{{adv.itemName}}
+			</div>
+			<div class="item" >
+				{{adv.posted_by}}
+			</div>
+			<div class="item">
+				{{adv.fixedPrice}}
+			</div>
+			<div class="item" >
+				{{adv.posted_date}}
+			</div>
+		</div>
+		<div class=" col-lg-6 col-md-6">
+			
+			<div class="enter-bid-price" >
+				<input type="text" placeholder="Your bid" name ="price" ng-model="bid.price">
+				<button class="btn btn-primary" ng-click="bidIt()" >Bid It</button>
+			</div>
+		</div>
+
+	 </div>	
+	</div>
+</section>
